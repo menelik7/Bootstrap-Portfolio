@@ -9,7 +9,12 @@
 /**General**/
 
 /**Header**/
-
+.col-md-5 {
+  float: right;
+}
+.row {
+  margin: 0;
+}
 .navbar {
   background: #fff;
   position: static;
@@ -43,11 +48,11 @@ h3 {
   color: #4aaaa5;
 }
 
-/**Social**/
-
-.col-md-3 {
-  float: right;
+h3 {
+  padding: 10px 0 10px 10px;
 }
+
+/**Social**/
 
 .social {
   display: inline-block;
@@ -61,15 +66,16 @@ h3 {
   position: relative;
   padding: 20px;
   margin: auto;
+  border: 0 none;
 
 }
 
 .thumbnail h3 {
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  width: 89%;
   padding: 15px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 300;
   line-height: 30px;
   color: #fff;
@@ -83,6 +89,11 @@ h3 {
 .wrapper {
   padding: 20px;
 }
+.btn-default {
+  color: #fff;
+  background: #4aaaa5;
+  border: 0 none;
+}
 /**Footer**/
 
 footer {
@@ -93,4 +104,31 @@ footer {
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
+}
+
+@media screen and (max-width: 992px) {
+
+.col-md-4 {
+  width: 100%;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.col-md-5 {
+  width: 100%;
+}
+
+ul {
+    display: inline-flex;
+    width: 100%;
+  }
+
+li {
+  width: 33%;
+  text-align: center;
+}
+
+
 }
